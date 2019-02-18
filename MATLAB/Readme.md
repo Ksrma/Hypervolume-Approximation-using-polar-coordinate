@@ -32,10 +32,13 @@ Before the use, all cpp files need to be compiled by mex. We have prepared make.
 	Usage: make
 	
 Editor: Jingda Deng
+
 Email: jingddeng2-c@my.cityu.edu.hk
+
 Latest Update: Feb, 2019
 
 [1] J. Deng, Q. Zhang, “Approximating Hypervolume and Hypervolume Contributions Using Polar Coordinate,”
 IEEE Transactions on Evolutionary Computation (accepted)
+
 [2] J. Bader and E. Zitzler, “HypE: An algorithm for fast hypervolume-based many-objective optimization,”
 Evolutionary computation, vol. 19, no. 1, pp. 45–76, 2011.
