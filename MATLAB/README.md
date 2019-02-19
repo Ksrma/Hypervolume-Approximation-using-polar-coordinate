@@ -6,15 +6,14 @@ Following are function list:
 1. HyperVol.m: approximate hypervolume;
 	- Input: point set (a matrix containing $n$ rows of $m$-d vectors, same below), 
 		reference point (a row vector, same below), sample number,
-		and the algorithm (a string containing the name of the algorithm [method]);
+		and the algorithm (a string containing the name of the algorithm [method], same below);
 	- Output: approximated volumes.
 2. HyperCon.m: approximate hypervolume contribution;
-	- Input: point set, reference point, sample number, 
-		and the algorithm (a string containing the name of the algorithm [method]);
+	- Input: point set, reference point, sample number, and the algorithm name;
 	- Output: approximated volumes.
 3. Ihk: approximate the I^h_k indicator proposed in HypE[2]. 
 	- Input: point set, reference point, the hypervolume parameter $k$, sample number, 
-     		and the algorithm (a string containing the name of the algorithm [method]);
+     		and the algorithm name
 	- Output: approximated volumes.
 	
 where [method] is one of following methods:
