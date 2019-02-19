@@ -11,9 +11,9 @@ Following are function list:
 2. HyperCon.m: approximate hypervolume contribution;
 	- Input: point set, reference point, sample number, and the algorithm name;
 	- Output: approximated volumes.
-3. Ihk: approximate the I^h_k indicator proposed in HypE[2]. 
+3. Ihk.m: approximate the I^h_k indicator proposed in HypE[2]. 
 	- Input: point set, reference point, the hypervolume parameter $k$, sample number, 
-     		and the algorithm name
+     		and the algorithm name;
 	- Output: approximated volumes.
 	
 where [method] is one of following methods:
