@@ -4,10 +4,8 @@ C++ and MATLAB implementation of the methods propoed in our paper[1].
 
 Detailed usage is included in individual folders.
 
-Author: Jingda Deng
-
-        Department of Computer Science
-	
+Author: Jingda Deng \\
+        Department of Computer Science \\	
 	City University of Hong Kong
 
 Email: jingddeng2-c@my.cityu.edu.hk
