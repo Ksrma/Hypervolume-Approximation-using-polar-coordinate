@@ -1,20 +1,14 @@
 function direction = Hua_direction(M, W)
 samples = construct_polar(M-1, W);
 direction = ones(W, M);
-S = 2*pi^(M/2)/gamma(M/2)/(2^M);
-int_all = zeros(1, M-1);
-for i=1:M-1
-    int_all(i) = int_of_power_of_sin(M-i-1, 0, pi/2);
-end
-prod_int_all = prod(int_all);
+% improve code efficiency following Prof. Manuel López-Ibáñez's suggestions
 ints = zeros(1, M-1);
 for i=1:M-1
-    ints(i) = prod_int_all/int_all(i);
+    ints(i) = int_of_power_of_sin(M-i-1, 0, pi/2);
 end
-ints = ints/S;
 for i=1:W
     for j=1:M-1
-            theta(j) = solve_inverse_int_of_power_sin(samples(i, j)/ints(j), M-j-1);
+            theta(j) = solve_inverse_int_of_power_sin(samples(i, j)*ints(j), M-j-1);
     end
     for j=1:M       % j-th component of i-th direction
         for k=1:M-j
